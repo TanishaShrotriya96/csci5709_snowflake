@@ -7,6 +7,6 @@ slack: going_data_way
 Sravani Kirla   
 Kellen Mulford    
 Ivan Radkevich  
-Tanisha Shrotriya  	
+Tanisha Shrotriya   
 Trevor Winger 		
 
