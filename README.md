@@ -1,3 +1,5 @@
+# DO NOT SUBMIT WITHOUT CHANGING DIRECTORY STRUCTURE IN TABLE
+
 # csci5709_snowflake
 
 Team: Going Data Way
