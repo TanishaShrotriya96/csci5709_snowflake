@@ -1,0 +1,1 @@
+drop database goingDataWay_sales;
