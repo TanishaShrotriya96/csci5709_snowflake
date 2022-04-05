@@ -1,3 +1,4 @@
+
 ## Project 2: Snowflake
 ### Team: Going Data Way
 ### Authors: Sravani Kirla, Kellen Mulford, Ivan Radkevich, Tanisha Shrotirya, Trevor Winger
