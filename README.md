@@ -31,7 +31,7 @@ The team found a few small issues in the data.
 5. In the `Sales` table:    
     a. The total sales in this table are 6,715,221, out of which 582,287 are sales done on items with price = 0. This is close to 10% of the sales. These may be fraudulent sales, which may cost the company. Employeeid 17 has record for maximum number of these sales, with a total of 56710.    
     b. The column `salespersonID` might be renamed `employeeID` to match the `employees` table. 
-    c.  A large number of sales have the same productID and quantity. It looks like this is what is in the raw csv on S3 but it seems fishy. To break the educational 4th wall, this might just be because it is likely synthetic data. **VIP NEEDS TO BE ERASED**--> I guess this is okay as long as the timestamps are different? 
+    c.  A large number of sales have the same productID and quantity, which could be an anamoly, like a duplicate transaction entry. This information paired with more information such as customer payment method, timestamp can help identify the same.
 
 #### Correcting Data Issues
 
