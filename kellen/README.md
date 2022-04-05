@@ -4,6 +4,22 @@
 ---
 
 ### Deliverable  2
+### Execution steps 
+Setup Encryption for deployment user by editing ~snowsql/config as follows: 
+[connections.userid]
+accountname = no19103.us-central1.gcp  
+username = tshrotri
+password = Oreo@@2020
+# private_key_path = 
+# rolename = 
+# 
+cd <PATH_TO_csci5709_snowflake>
+
+Execute the index.sh file to create the raw_schema, load data to it, create curated schema, and load data to it. 
+sh index.sh <userid>
+To drop created tables and schema run command
+snowsql -c <userid> -f "views/drop_everything.sql"
+
 #### Step 1
 
 The team wrote two scripts that accomplish the tasks in step 1. The first script creates the database, schema, and tables. The second script creates an external stage for the S3 data, and then loads the data into the tables created in script 1. One tricky component is that several of the raw csv files were delimited with `|` but one was delimited with `,`. Snowflake documentation suggests defining a file format to ensure clean data entry. However, instead of defining several file formats to handle the different delimiters which would have required setting up multiple stages the team simply let Snowflake decide the delimiter. 
@@ -20,7 +36,8 @@ The team wrote two scripts that accomplish the tasks in step 1. The first script
 The team found a few small issues in the data.
 
 1. In the `Employees` table:
-    a. The middle initials are all lower case. In the `Customers` table the middle initials are all upper case.
+    a. The middle initial for employee id 15 is an apostrophe, and their last name has been written as O'Leary.
+    b. The middle initials are all lower case. In the `Customers` table the middle initials are all upper case.
     b. Inconsistent lower/upper cases in the region names
 2. In the `Customers` table:
     a. See issue "a." in the Employees table section.
