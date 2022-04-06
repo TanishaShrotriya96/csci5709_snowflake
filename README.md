@@ -65,7 +65,9 @@ Materialized views are a subset of the table that is precomputed based on a `SEL
 |-------|--------------|------|-------------|
 |1|`drop_everything.sql`|`snowflake/drop_everything.sql`|Drops the "goindDataWay_Sales database and all accompanying Schemas, Tables, Views etc.|
 
-#### Appendix: Complete script table
+---
+
+### Appendix: Complete script table
 
 | Order | Name of File | Path | Description |
 |-------|--------------|------|-------------|
