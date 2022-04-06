@@ -28,10 +28,10 @@ The team found a few small issues in the data.
     a. See issue "a." in the Employees table section.   
 3. In the `Products` table:     
     a. The price for a number of products is 0. Also, despite creating the `products` column with type decimal when previewing the data in snowflake the numbers have all been truncated. Kellen's time spent working in a bike shop tipped him off that this is a catalog of bike parts. It is highly unlikely that any wholesale bike part vendor is giving out headset ball bearings for free.    
-5. In the `Sales` table:    
-    a. The total sales in this table are 6,715,221, out of which 582,287 are sales done on items with price = 0. This is close to 10% of the sales. These may be fraudulent sales, which may cost the company. Employeeid 17 has record for maximum number of these sales, with a total of 56710.    
+4. In the `Sales` table:    
+    a. There are a number of items in the product catalog with price $0. Around 10% of sales were with products with a price of $0. These may be fraudulent sales. The employee with ID 17 has the most of these sales, with a total of 56710.    
     b. The column `salespersonID` might be renamed `employeeID` to match the `employees` table. 
-    c.  A large number of sales have the same productID and quantity, which could be an anamoly, like a duplicate transaction entry. This information paired with more information such as customer payment method, timestamp can help identify the same.
+    c.  A large number of individual sales have the same value in the columns productID and quantity (that is, for these rows `productid=quantity`). The most likely explanation for this is that it is synthetic data, as it seems abnormally coincidental.
 
 #### Correcting Data Issues
 
