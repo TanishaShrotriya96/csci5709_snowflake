@@ -1,1 +1,1 @@
-drop database goingDataWay_sales;
+DROP database IF EXISTS goingDataWay_sales CASCADE;
