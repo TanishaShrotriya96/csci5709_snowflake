@@ -8414,3 +8414,1152 @@ syntax error line 1 at position 22 unexpected 'goingDataWay_sales'.
 2022-04-05 19:45:44,076 (19364/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
 2022-04-05 19:45:44,076 (19364/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
 2022-04-05 19:45:44,077 (19364/MainThread) snowflake.connector.connection DEBUG     connection:523  - Session is closed
+2022-04-06 19:25:53,513 (6504/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:686  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2022-04-06 19:25:53,607 (6504/MainThread) snowflake.cli.common.util_cli INFO       util_cli:722  - REQUESTS_CA_BUNDLE is already set to C:\Users\tanis\AppData\Local\Temp\_MEI143202\certifi\cacert.pem
+2022-04-06 19:25:53,607 (6504/MainThread) __main__ DEBUG      eventloop:209  - is_terminal: True, is_interactive: True
+2022-04-06 19:25:53,607 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:163  - starting sqlexecute
+2022-04-06 19:25:53,607 (6504/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\tanis\.snowsql\1.2.21\snowsql.cnf
+2022-04-06 19:25:53,607 (6504/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2022-04-06 19:25:53,607 (6504/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2022-04-06 19:25:53,607 (6504/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2022-04-06 19:25:53,607 (6504/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\tanis\.snowsql.cnf
+2022-04-06 19:25:53,607 (6504/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\tanis\.snowsql\config
+2022-04-06 19:25:53,607 (6504/MainThread) __main__ DEBUG      eventloop:346  - {'database': None, 'dbname': None, 'warehouse': None, 'warehousename': None, 'user': None, 'username': 'tshrotri', 'account': None, 'accountname': 'no19103.us-central1.gcp', 'host': None, 'port': None, 'region': None, 'schema': None, 'schemaname': None, 'role': None, 'rolename': None, 'proxy_host': None, 'proxy_port': None, 'proxy_user': None, 'authenticator': None, 'mfa_passcode': None, 'session_parameters': None, 'ocsp_fail_open': None, 'insecure_mode': None, 'protocol': None, 'probe_connection': None, 'private_key_path': 'C:\\Users\\tanis\\.snowsql\\id_rsa_snowflake_demo', 'login_timeout': None, 'client_session_keep_alive': None, 'disable_request_pooling': None, 'token': None, 'client_store_temporary_credential': None}
+2022-04-06 19:25:53,607 (6504/MainThread) __main__ DEBUG      eventloop:353  - [None, None, None, None, None, 'tshrotri', None, 'no19103.us-central1.gcp', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, 'C:\\Users\\tanis\\.snowsql\\id_rsa_snowflake_demo', None, None, None, None, None]
+2022-04-06 19:25:53,622 (6504/MainThread) __main__ DEBUG      eventloop:359  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2022-04-06 19:25:53,622 (6504/MainThread) __main__ DEBUG      eventloop:407  - host=None, port: + None
+2022-04-06 19:25:53,623 (6504/MainThread) __main__ DEBUG      eventloop:446  - prompting user, password and account if still missing
+2022-04-06 19:25:55,610 (6504/MainThread) __main__ DEBUG      eventloop:501  - init sqlexecute
+2022-04-06 19:25:55,611 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:254  - Connection DB Params: database: None, warehouse: None, user: tshrotri, host: no19103.us-central1.gcp.snowflakecomputing.com, port: 443, region: None, account: no19103.us-central1.gcp, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE_JWT, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2022-04-06 19:25:55,612 (6504/MainThread) snowflake.connector.connection INFO     connection:272  - Snowflake Connector for Python Version: 2.7.1, Python Version: 3.6.8, Platform: Windows-10-10.0.22000-SP0
+2022-04-06 19:25:55,613 (6504/MainThread) snowflake.connector.connection DEBUG     connection:489  - connect
+2022-04-06 19:25:55,613 (6504/MainThread) snowflake.connector.connection DEBUG     connection:754  - __config
+2022-04-06 19:25:55,613 (6504/MainThread) snowflake.connector.connection INFO     connection:879  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2022-04-06 19:25:55,614 (6504/MainThread) snowflake.connector.connection INFO     connection:896  - Setting use_openssl_only mode to False
+2022-04-06 19:25:55,615 (6504/MainThread) snowflake.connector.converter DEBUG      converter:142  - use_numpy: False
+2022-04-06 19:25:55,615 (6504/MainThread) snowflake.connector.connection DEBUG     connection:657  - REST API object was created: no19103.us-central1.gcp.snowflakecomputing.com:443
+2022-04-06 19:25:55,620 (6504/MainThread) snowflake.connector.auth_keypair DEBUG   auth_keypair:147  - Public key fingerprint is SHA256:tPVzoCwBVYqlJb2wPl/unYGR0Ajzgsj3frWJRCK+pfU=
+2022-04-06 19:25:55,621 (6504/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2022-04-06 19:25:55,621 (6504/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: <bound method AuthByKeyPair.assertion_content of <snowflake.connector.auth_keypair.AuthByKeyPair object at 0x00000134C1C4DB70>>
+2022-04-06 19:25:55,621 (6504/MainThread) snowflake.connector.auth DEBUG           auth:212  - account=no19103, user=tshrotri, database=None, schema=None, warehouse=None, role=None, request_id=b7a2b1cb-e143-4905-80af-40ccc0b570ed
+2022-04-06 19:25:55,622 (6504/MainThread) snowflake.connector.auth DEBUG           auth:238  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.21', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'no19103', 'LOGIN_NAME': 'tshrotri', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.22000-SP0', 'PYTHON_VERSION': '3.6.8', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'AUTHENTICATOR': 'SNOWFLAKE_JWT', 'TOKEN': '****.eyJpc3MiOiJOTzE5MTAzLlRTSFJPVFJJLlNIQTI1Njp0UFZ6b0N3QlZZcWxKYjJ3UGwvdW5ZR1IwQWp6Z3NqM2ZyV0pSQ0srcGZVPSIsInN1YiI6Ik5PMTkxMDMuVFNIUk9UUkkiLCJpYXQiOjE2NDkyNzMxNTUsImV4cCI6MTY0OTI3MzIxNX0.SPaDFj8xcnI4xBzEJNwEehbejpTOqXCTbcoB_BF95bCFYp5__rlttYWnYN8oXxS5-12pEyn5HtgbAvY8ghLQTj7b1zwuKuuKl5GLShqJW3OTbLf6Hj51lGOzWsAuxzYTbE3jKQmNVo9lAMbG71YAWjxlbvLEAdTbRUYuhNYbQ23Sjaj196lqVTOPOUdUdYWLS7JKBYt6PCyxWsCNH2UEDEbYIy8NADHVYJcuFojnhJs86meWtnydboXtSKvZLD5fgqYGI9DWuhahoLwZiB_4D0NIcAyPmLR4ww7R8tRW06usXl9IxBbmLRFxbALw9XFkWIiMdEiHG-qNwkpOzQFRnw', 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2022-04-06 19:25:55,622 (6504/MainThread) snowflake.connector.auth DEBUG           auth:247  - Authenticator, AuthByKeyPair, implements get_timeout
+2022-04-06 19:25:55,623 (6504/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 10
+2022-04-06 19:25:55,623 (6504/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:333  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2022-04-06 19:25:55,623 (6504/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:333  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2022-04-06 19:25:55,623 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:55,624 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: 10, retry cnt: 1
+2022-04-06 19:25:55,624 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: a02f8b05-ac25-4a93-b531-eeeeff9642cf
+2022-04-06 19:25:55,624 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 10
+2022-04-06 19:25:55,627 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:975  - Starting new HTTPS connection (1): no19103.us-central1.gcp.snowflakecomputing.com:443
+2022-04-06 19:25:55,923 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:464  - cache directory: C:\Users\tanis\AppData\Local\Snowflake\Caches
+2022-04-06 19:25:55,939 (6504/MainThread) snowflake.connector.ssl_wrap_socket DEBUG ssl_wrap_socket:86   - OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+2022-04-06 19:25:55,939 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:506  - ocsp_response_cache_uri: file://C:/Users/tanis/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2022-04-06 19:25:55,939 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:507  - OCSP_VALIDATION_CACHE size: 0
+2022-04-06 19:25:55,939 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:290  - OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2022-04-06 19:25:55,939 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:325  - OCSP dynamic cache server RETRY URL: None
+2022-04-06 19:25:55,954 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2022-04-06 19:25:55,954 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-05-12 02:43:45+00:00
+2022-04-06 19:25:55,954 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-05-12 02:47:38+00:00
+2022-04-06 19:25:55,954 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2022-04-06 19:25:55,954 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2022-04-06 19:25:55,970 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-04-15 00:00:00+00:00
+2022-04-06 19:25:55,970 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:55,985 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:545  - Read OCSP response cache file: C:/Users/tanis/AppData/Local/Snowflake/Caches/ocsp_response_cache.json, count=166
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1063 - validating certificate: no19103.us-central1.gcp.snowflakecomputing.com
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:434  - # of certificates: 3
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:440  - subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.us-central1.gcp.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:440  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')])
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:440  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')])
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:682  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.us-central1.gcp.snowflakecomputing.com')])
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:682  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:682  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.us-central1.gcp.snowflakecomputing.com')])
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1237 - using OCSP response cache
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:329  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2022-04-06 19:25:56,001 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:336  - Verifying the OCSP response is signed by the issuer.
+2022-04-06 19:25:56,017 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:682  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2022-04-06 19:25:56,017 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1237 - using OCSP response cache
+2022-04-06 19:25:56,017 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:329  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2022-04-06 19:25:56,017 (6504/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:336  - Verifying the OCSP response is signed by the issuer.
+2022-04-06 19:25:56,017 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:604  - writing OCSP response cache file to C:/Users/tanis/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2022-04-06 19:25:56,017 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1715 - encoding OCSP response cache to JSON
+2022-04-06 19:25:56,035 (6504/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1115 - ok
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /session/v1/login-request?request_id=b7a2b1cb-e143-4905-80af-40ccc0b570ed&request_guid=a02f8b05-ac25-4a93-b531-eeeeff9642cf HTTP/1.1" 200 None
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.auth DEBUG           auth:370  - completed authentication
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.auth DEBUG           auth:414  - token = ******
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.auth DEBUG           auth:418  - master_token = ******
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.auth DEBUG           auth:422  - id_token = NULL
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.connector.auth DEBUG           auth:426  - mfa_token = NULL
+2022-04-06 19:25:56,222 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:298  - adding connection: 0
+2022-04-06 19:25:56,222 (6504/MainThread) __main__ DEBUG      eventloop:666  - Read from a file
+2022-04-06 19:25:56,234 (6504/MainThread) __main__ DEBUG      eventloop:669  - Files are added to list ('raw_schema/create_raw_schema.sql',)
+2022-04-06 19:25:56,249 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace DATABASE goingDataWay_sales;
+2022-04-06 19:25:56,250 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace DATABASE goingDataWay_sales;
+2022-04-06 19:25:56,250 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - set()
+2022-04-06 19:25:56,250 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:25:56,250 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:25:56,251 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:25:56,251 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace DATABASE goingDataWay_sales;
+2022-04-06 19:25:56,251 (6504/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:25:56,251 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:25:56,251 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:25:56,251 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace DATABASE goingDataWay_sales;] with input=[None], processed=[{}]
+2022-04-06 19:25:56,252 (6504/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace DATABASE goingDataWay_sales;]
+2022-04-06 19:25:56,252 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:25:56,252 (6504/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 1
+2022-04-06 19:25:56,252 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: e512bfc3-8246-4cef-99e0-06dfd136130b
+2022-04-06 19:25:56,252 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace DATABASE goingDataWay_sales;]
+2022-04-06 19:25:56,252 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:25:56,252 (6504/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:25:56,253 (6504/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace DATABASE goingDataWay_sales;], sequence_id=[1], is_file_transfer=[False]
+2022-04-06 19:25:56,253 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:56,253 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:25:56,254 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: eda7816f-c890-49e1-adc0-77165398d381
+2022-04-06 19:25:56,254 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=e512bfc3-8246-4cef-99e0-06dfd136130b&request_guid=eda7816f-c890-49e1-adc0-77165398d381 HTTP/1.1" 200 None
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8d-0000-8025-0000-d14d00016006
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8d-0000-8025-0000-d14d00016006
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:25:56,605 (6504/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:25:56,605 (6504/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Database GOINGDATAWAY_SALES successfully created.']]"
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [49]
+2022-04-06 19:25:56,605 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                                           '], minwidths: [49]
+2022-04-06 19:25:56,617 (6504/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.36801743507385254
+2022-04-06 19:25:56,619 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace SCHEMA raw;
+2022-04-06 19:25:56,619 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace SCHEMA raw;
+2022-04-06 19:25:56,619 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:25:56,620 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:25:56,620 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:25:56,620 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:25:56,621 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace SCHEMA raw;
+2022-04-06 19:25:56,621 (6504/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:25:56,621 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:25:56,622 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:25:56,622 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace SCHEMA raw;] with input=[None], processed=[{}]
+2022-04-06 19:25:56,622 (6504/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace SCHEMA raw;]
+2022-04-06 19:25:56,622 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:25:56,622 (6504/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 2
+2022-04-06 19:25:56,622 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 50022e20-51b6-468d-8a9f-2043a3782cbb
+2022-04-06 19:25:56,623 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace SCHEMA raw;]
+2022-04-06 19:25:56,623 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:25:56,623 (6504/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:25:56,624 (6504/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace SCHEMA raw;], sequence_id=[2], is_file_transfer=[False]
+2022-04-06 19:25:56,624 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:56,625 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:25:56,625 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 918c0372-4d74-4f36-a9b6-bdcbc058f8d9
+2022-04-06 19:25:56,625 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=50022e20-51b6-468d-8a9f-2043a3782cbb&request_guid=918c0372-4d74-4f36-a9b6-bdcbc058f8d9 HTTP/1.1" 200 None
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8d-0000-801f-0000-d14d00017006
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8d-0000-801f-0000-d14d00017006
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:25:56,880 (6504/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:25:56,896 (6504/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:25:56,896 (6504/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:25:56,897 (6504/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Schema RAW successfully created.']]"
+2022-04-06 19:25:56,897 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [32]
+2022-04-06 19:25:56,898 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                          '], minwidths: [32]
+2022-04-06 19:25:56,904 (6504/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.28563833236694336
+2022-04-06 19:25:56,906 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace TABLE employees
+(
+    EmployeeID      integer PRIMARY KEY,
+    FirstName       varchar(50),
+    MiddleInitial   varchar(50),
+    LastName        varchar(50),
+    Region          varchar(100)
+);
+2022-04-06 19:25:56,906 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace TABLE employees
+(
+    EmployeeID      integer PRIMARY KEY,
+    FirstName       varchar(50),
+    MiddleInitial   varchar(50),
+    LastName        varchar(50),
+    Region          varchar(100)
+);
+2022-04-06 19:25:56,907 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:25:56,907 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:25:56,907 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:25:56,907 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:25:56,908 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace TABLE employees
+(
+    EmployeeID      integer PRIMARY KEY,
+    FirstName       varchar(50),
+    MiddleInitial   varchar(50),
+    LastName        varchar(50),
+    Region          varchar(100)
+);
+2022-04-06 19:25:56,908 (6504/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:25:56,908 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:25:56,908 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:25:56,908 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace TABLE employees ( EmployeeID      integer PRIMARY KEY, FirstNa...] with input=[None], processed=[{}]
+2022-04-06 19:25:56,909 (6504/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace TABLE employees ( EmployeeID      integer PRIMARY KEY, FirstNa...]
+2022-04-06 19:25:56,909 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:25:56,909 (6504/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 3
+2022-04-06 19:25:56,909 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 628c7f81-11db-487e-b3d0-872f0f396805
+2022-04-06 19:25:56,909 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace TABLE employees ( EmployeeID      integer PRIMARY KEY, FirstNa...]
+2022-04-06 19:25:56,909 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:25:56,910 (6504/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:25:56,910 (6504/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace TABLE employees ( EmployeeID      integer PRIMARY KEY, FirstNa...], sequence_id=[3], is_file_transfer=[False]
+2022-04-06 19:25:56,910 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:56,910 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:25:56,911 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 2299a5fe-5e24-4f5c-8de1-c49c316d351a
+2022-04-06 19:25:56,911 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=628c7f81-11db-487e-b3d0-872f0f396805&request_guid=2299a5fe-5e24-4f5c-8de1-c49c316d351a HTTP/1.1" 200 None
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8d-0000-8015-0000-d14d00018006
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8d-0000-8015-0000-d14d00018006
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:25:57,296 (6504/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:25:57,296 (6504/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Table EMPLOYEES successfully created.']]"
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [37]
+2022-04-06 19:25:57,296 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                               '], minwidths: [37]
+2022-04-06 19:25:57,303 (6504/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.39774131774902344
+2022-04-06 19:25:57,304 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace TABLE customers
+(
+    CustomerID      integer PRIMARY KEY,
+    FirstName       varchar(50),
+    MiddleInitial   varchar(50),
+    LastName        varchar(50)
+);
+2022-04-06 19:25:57,304 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace TABLE customers
+(
+    CustomerID      integer PRIMARY KEY,
+    FirstName       varchar(50),
+    MiddleInitial   varchar(50),
+    LastName        varchar(50)
+);
+2022-04-06 19:25:57,305 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:25:57,305 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:25:57,305 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:25:57,305 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:25:57,306 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace TABLE customers
+(
+    CustomerID      integer PRIMARY KEY,
+    FirstName       varchar(50),
+    MiddleInitial   varchar(50),
+    LastName        varchar(50)
+);
+2022-04-06 19:25:57,306 (6504/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:25:57,306 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:25:57,306 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:25:57,307 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace TABLE customers ( CustomerID      integer PRIMARY KEY, FirstNa...] with input=[None], processed=[{}]
+2022-04-06 19:25:57,307 (6504/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace TABLE customers ( CustomerID      integer PRIMARY KEY, FirstNa...]
+2022-04-06 19:25:57,307 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:25:57,307 (6504/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 4
+2022-04-06 19:25:57,307 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 69e9336a-92ae-4c5f-aa5d-96618a51951c
+2022-04-06 19:25:57,307 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace TABLE customers ( CustomerID      integer PRIMARY KEY, FirstNa...]
+2022-04-06 19:25:57,308 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:25:57,308 (6504/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:25:57,308 (6504/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace TABLE customers ( CustomerID      integer PRIMARY KEY, FirstNa...], sequence_id=[4], is_file_transfer=[False]
+2022-04-06 19:25:57,309 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:57,309 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:25:57,309 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 5d545b11-1d02-40f5-b0c9-a4bf3d734bbf
+2022-04-06 19:25:57,309 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:25:57,550 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=69e9336a-92ae-4c5f-aa5d-96618a51951c&request_guid=5d545b11-1d02-40f5-b0c9-a4bf3d734bbf HTTP/1.1" 200 None
+2022-04-06 19:25:57,550 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:57,550 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:57,550 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:57,550 (6504/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8d-0000-8015-0000-d14d0001800a
+2022-04-06 19:25:57,550 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8d-0000-8015-0000-d14d0001800a
+2022-04-06 19:25:57,550 (6504/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:25:57,550 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:25:57,566 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:25:57,566 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:25:57,566 (6504/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:25:57,566 (6504/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:25:57,566 (6504/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:25:57,566 (6504/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:25:57,566 (6504/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Table CUSTOMERS successfully created.']]"
+2022-04-06 19:25:57,566 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [37]
+2022-04-06 19:25:57,566 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                               '], minwidths: [37]
+2022-04-06 19:25:57,571 (6504/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.26634955406188965
+2022-04-06 19:25:57,572 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace TABLE products
+(
+    ProductID   integer PRIMARY KEY,
+    Name        varchar(50),
+    Price       decimal
+);
+2022-04-06 19:25:57,572 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace TABLE products
+(
+    ProductID   integer PRIMARY KEY,
+    Name        varchar(50),
+    Price       decimal
+);
+2022-04-06 19:25:57,573 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:25:57,573 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:25:57,573 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:25:57,573 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:25:57,574 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace TABLE products
+(
+    ProductID   integer PRIMARY KEY,
+    Name        varchar(50),
+    Price       decimal
+);
+2022-04-06 19:25:57,574 (6504/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:25:57,574 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:25:57,574 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:25:57,575 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace TABLE products ( ProductID   integer PRIMARY KEY, Name        ...] with input=[None], processed=[{}]
+2022-04-06 19:25:57,575 (6504/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace TABLE products ( ProductID   integer PRIMARY KEY, Name        ...]
+2022-04-06 19:25:57,575 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:25:57,575 (6504/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 5
+2022-04-06 19:25:57,576 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 2b1c6168-aafc-4a71-ae5f-98a635291737
+2022-04-06 19:25:57,576 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace TABLE products ( ProductID   integer PRIMARY KEY, Name        ...]
+2022-04-06 19:25:57,576 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:25:57,576 (6504/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:25:57,576 (6504/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace TABLE products ( ProductID   integer PRIMARY KEY, Name        ...], sequence_id=[5], is_file_transfer=[False]
+2022-04-06 19:25:57,577 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:57,577 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:25:57,577 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: ce3100bc-7ecb-4373-8478-27adeac21166
+2022-04-06 19:25:57,577 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:25:58,086 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=2b1c6168-aafc-4a71-ae5f-98a635291737&request_guid=ce3100bc-7ecb-4373-8478-27adeac21166 HTTP/1.1" 200 None
+2022-04-06 19:25:58,089 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:58,090 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:58,091 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8d-0000-8024-0000-d14d00019006
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8d-0000-8024-0000-d14d00019006
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:25:58,092 (6504/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:25:58,092 (6504/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Table PRODUCTS successfully created.']]"
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [36]
+2022-04-06 19:25:58,092 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                              '], minwidths: [36]
+2022-04-06 19:25:58,097 (6504/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.525113582611084
+2022-04-06 19:25:58,099 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace TABLE sales
+(
+    OrderID         integer PRIMARY KEY,
+    SalesPersonID   integer references employees(EmployeeID),
+    CustomerID      integer references customers(CustomerID),
+    ProductID       integer references products(ProductID),
+    Quantity        integer,
+    Date        timestamp
+);
+2022-04-06 19:25:58,099 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace TABLE sales
+(
+    OrderID         integer PRIMARY KEY,
+    SalesPersonID   integer references employees(EmployeeID),
+    CustomerID      integer references customers(CustomerID),
+    ProductID       integer references products(ProductID),
+    Quantity        integer,
+    Date        timestamp
+);
+2022-04-06 19:25:58,100 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:25:58,100 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:25:58,100 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:25:58,100 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:25:58,101 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace TABLE sales
+(
+    OrderID         integer PRIMARY KEY,
+    SalesPersonID   integer references employees(EmployeeID),
+    CustomerID      integer references customers(CustomerID),
+    ProductID       integer references products(ProductID),
+    Quantity        integer,
+    Date        timestamp
+);
+2022-04-06 19:25:58,101 (6504/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:25:58,101 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:25:58,101 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:25:58,102 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace TABLE sales ( OrderID         integer PRIMARY KEY, SalesPerson...] with input=[None], processed=[{}]
+2022-04-06 19:25:58,102 (6504/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace TABLE sales ( OrderID         integer PRIMARY KEY, SalesPerson...]
+2022-04-06 19:25:58,102 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:25:58,102 (6504/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 6
+2022-04-06 19:25:58,102 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: f391c623-6838-4382-a767-6560eb21536b
+2022-04-06 19:25:58,102 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace TABLE sales ( OrderID         integer PRIMARY KEY, SalesPerson...]
+2022-04-06 19:25:58,103 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:25:58,103 (6504/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:25:58,103 (6504/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace TABLE sales ( OrderID         integer PRIMARY KEY, SalesPerson...], sequence_id=[6], is_file_transfer=[False]
+2022-04-06 19:25:58,103 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:58,103 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:25:58,103 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 63c6034a-1b58-4756-9283-763edaa0bed8
+2022-04-06 19:25:58,104 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:25:58,665 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=f391c623-6838-4382-a767-6560eb21536b&request_guid=63c6034a-1b58-4756-9283-763edaa0bed8 HTTP/1.1" 200 None
+2022-04-06 19:25:58,667 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:58,667 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:58,667 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:58,668 (6504/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8d-0000-8026-0000-d14d0001a006
+2022-04-06 19:25:58,668 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8d-0000-8026-0000-d14d0001a006
+2022-04-06 19:25:58,668 (6504/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:25:58,668 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:25:58,668 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:25:58,669 (6504/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:25:58,669 (6504/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:25:58,669 (6504/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:25:58,669 (6504/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:25:58,670 (6504/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:25:58,670 (6504/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Table SALES successfully created.']]"
+2022-04-06 19:25:58,670 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [33]
+2022-04-06 19:25:58,670 (6504/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                           '], minwidths: [33]
+2022-04-06 19:25:58,674 (6504/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.5766549110412598
+2022-04-06 19:25:58,675 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: 
+2022-04-06 19:25:58,675 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: 
+2022-04-06 19:25:58,676 (6504/MainThread) __main__ DEBUG      eventloop:794  - end of SQL: create or replace TABLE sales
+(
+    OrderID         integer PRIMARY KEY,
+    SalesPersonID   integer references employees(EmployeeID),
+    CustomerID      integer references customers(CustomerID),
+    ProductID       integer references products(ProductID),
+    Quantity        integer,
+    Date        timestamp
+);
+2022-04-06 19:25:58,677 (6504/MainThread) __main__ DEBUG      eventloop:581  - closing sessions
+2022-04-06 19:25:58,677 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:349  - closing connections
+2022-04-06 19:25:58,677 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:25:58,678 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:25:58,678 (6504/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:25:58,678 (6504/MainThread) snowflake.connector.connection INFO     connection:509  - closed
+2022-04-06 19:25:58,678 (6504/MainThread) snowflake.connector.telemetry DEBUG      telemetry:143  - Closing telemetry client.
+2022-04-06 19:25:58,679 (6504/MainThread) snowflake.connector.telemetry DEBUG      telemetry:112  - Sending 1 logs to telemetry. Data is {'logs': [{'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8d-0000-8025-0000-d14d00016006', 'value': -519}, 'timestamp': '1649273156605'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8d-0000-8025-0000-d14d00016006', 'value': 0}, 'timestamp': '1649273156605'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8d-0000-801f-0000-d14d00017006', 'value': -517}, 'timestamp': '1649273156880'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8d-0000-801f-0000-d14d00017006', 'value': 16}, 'timestamp': '1649273156896'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8d-0000-8015-0000-d14d00018006', 'value': -516}, 'timestamp': '1649273157296'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8d-0000-8015-0000-d14d00018006', 'value': 0}, 'timestamp': '1649273157296'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8d-0000-8015-0000-d14d0001800a', 'value': -523}, 'timestamp': '1649273157550'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8d-0000-8015-0000-d14d0001800a', 'value': 16}, 'timestamp': '1649273157566'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8d-0000-8024-0000-d14d00019006', 'value': -509}, 'timestamp': '1649273158092'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8d-0000-8024-0000-d14d00019006', 'value': 0}, 'timestamp': '1649273158092'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8d-0000-8026-0000-d14d0001a006', 'value': -510}, 'timestamp': '1649273158668'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8d-0000-8026-0000-d14d0001a006', 'value': 2}, 'timestamp': '1649273158670'}]}.
+2022-04-06 19:25:58,681 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:58,681 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: 5, retry cnt: 1
+2022-04-06 19:25:58,681 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: ceab0902-d520-48a5-8d9d-eebefc0afe30
+2022-04-06 19:25:58,682 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:25:58,790 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /telemetry/send?request_guid=ceab0902-d520-48a5-8d9d-eebefc0afe30 HTTP/1.1" 200 86
+2022-04-06 19:25:58,791 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:58,791 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:58,791 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:58,792 (6504/MainThread) snowflake.connector.telemetry DEBUG      telemetry:133  - Successfully uploading metrics to telemetry.
+2022-04-06 19:25:58,792 (6504/MainThread) snowflake.connector.connection INFO     connection:512  - No async queries seem to be running, deleting session
+2022-04-06 19:25:58,792 (6504/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:25:58,792 (6504/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: 5, retry cnt: 1
+2022-04-06 19:25:58,793 (6504/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: b46e7d57-724b-4c35-acda-f02683867b5b
+2022-04-06 19:25:58,793 (6504/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:25:58,891 (6504/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /session?delete=true&request_guid=b46e7d57-724b-4c35-acda-f02683867b5b HTTP/1.1" 200 76
+2022-04-06 19:25:58,892 (6504/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:25:58,893 (6504/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:25:58,893 (6504/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:25:58,895 (6504/MainThread) snowflake.connector.connection DEBUG     connection:523  - Session is closed
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:686  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.common.util_cli INFO       util_cli:722  - REQUESTS_CA_BUNDLE is already set to C:\Users\tanis\AppData\Local\Temp\_MEI210482\certifi\cacert.pem
+2022-04-06 19:26:12,414 (17980/MainThread) __main__ DEBUG      eventloop:209  - is_terminal: True, is_interactive: True
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:163  - starting sqlexecute
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\tanis\.snowsql\1.2.21\snowsql.cnf
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\tanis\.snowsql.cnf
+2022-04-06 19:26:12,414 (17980/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\tanis\.snowsql\config
+2022-04-06 19:26:12,414 (17980/MainThread) __main__ DEBUG      eventloop:346  - {'database': None, 'dbname': None, 'warehouse': None, 'warehousename': None, 'user': None, 'username': 'tshrotri', 'account': None, 'accountname': 'no19103.us-central1.gcp', 'host': None, 'port': None, 'region': None, 'schema': None, 'schemaname': None, 'role': None, 'rolename': None, 'proxy_host': None, 'proxy_port': None, 'proxy_user': None, 'authenticator': None, 'mfa_passcode': None, 'session_parameters': None, 'ocsp_fail_open': None, 'insecure_mode': None, 'protocol': None, 'probe_connection': None, 'private_key_path': 'C:\\Users\\tanis\\.snowsql\\id_rsa_snowflake_demo', 'login_timeout': None, 'client_session_keep_alive': None, 'disable_request_pooling': None, 'token': None, 'client_store_temporary_credential': None}
+2022-04-06 19:26:12,414 (17980/MainThread) __main__ DEBUG      eventloop:353  - [None, None, None, None, None, 'tshrotri', None, 'no19103.us-central1.gcp', None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, 'C:\\Users\\tanis\\.snowsql\\id_rsa_snowflake_demo', None, None, None, None, None]
+2022-04-06 19:26:12,414 (17980/MainThread) __main__ DEBUG      eventloop:359  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2022-04-06 19:26:12,414 (17980/MainThread) __main__ DEBUG      eventloop:407  - host=None, port: + None
+2022-04-06 19:26:12,414 (17980/MainThread) __main__ DEBUG      eventloop:446  - prompting user, password and account if still missing
+2022-04-06 19:26:14,381 (17980/MainThread) __main__ DEBUG      eventloop:501  - init sqlexecute
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:254  - Connection DB Params: database: None, warehouse: None, user: tshrotri, host: no19103.us-central1.gcp.snowflakecomputing.com, port: 443, region: None, account: no19103.us-central1.gcp, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE_JWT, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.connection INFO     connection:272  - Snowflake Connector for Python Version: 2.7.1, Python Version: 3.6.8, Platform: Windows-10-10.0.22000-SP0
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.connection DEBUG     connection:489  - connect
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.connection DEBUG     connection:754  - __config
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.connection INFO     connection:879  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.connection INFO     connection:896  - Setting use_openssl_only mode to False
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.converter DEBUG      converter:142  - use_numpy: False
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.connection DEBUG     connection:657  - REST API object was created: no19103.us-central1.gcp.snowflakecomputing.com:443
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.auth_keypair DEBUG   auth_keypair:147  - Public key fingerprint is SHA256:tPVzoCwBVYqlJb2wPl/unYGR0Ajzgsj3frWJRCK+pfU=
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: <bound method AuthByKeyPair.assertion_content of <snowflake.connector.auth_keypair.AuthByKeyPair object at 0x0000020DEFE3DBA8>>
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.auth DEBUG           auth:212  - account=no19103, user=tshrotri, database=None, schema=None, warehouse=None, role=None, request_id=a12832b2-b10f-48ad-9308-d1448bee596b
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.auth DEBUG           auth:238  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.21', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'no19103', 'LOGIN_NAME': 'tshrotri', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.22000-SP0', 'PYTHON_VERSION': '3.6.8', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'AUTHENTICATOR': 'SNOWFLAKE_JWT', 'TOKEN': '****.eyJpc3MiOiJOTzE5MTAzLlRTSFJPVFJJLlNIQTI1Njp0UFZ6b0N3QlZZcWxKYjJ3UGwvdW5ZR1IwQWp6Z3NqM2ZyV0pSQ0srcGZVPSIsInN1YiI6Ik5PMTkxMDMuVFNIUk9UUkkiLCJpYXQiOjE2NDkyNzMxNzQsImV4cCI6MTY0OTI3MzIzNH0.ZWJdO6MDM0hWHN593eaAIcQLuvxGDz32OHBTlfU02AcsbQrirA-h9OyHKN0BIA5XoPli6oRRSRmPCqLiw7Hc2qPZ5o-SXNbgNC0b4unsHXDHvLCdgbEWiFJknk0iHmq6qMWOyB0y8NFm2MhPwf_U-hZXaEI-5PxcoG2gxADHH75hp9vgLlxKHK_UBEXtsxOWejAsQqaYQ8h2846ZNBc4qBNSseHfchxPL1Dp0bWFf2gMWOhszbLsaUmUS12xejdiivDKpCmzMrR7r3z-aNOmrm-copTqiNH2cUYjxTBp46GyR3RJzh69aswdT27M18UK4dhA-n7Mf7xHeTt8Jz5nCg', 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.auth DEBUG           auth:247  - Authenticator, AuthByKeyPair, implements get_timeout
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 10
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:333  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:333  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: 10, retry cnt: 1
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 8eae9336-fdf6-4fa6-9838-19d7d38962c9
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 10
+2022-04-06 19:26:14,381 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:975  - Starting new HTTPS connection (1): no19103.us-central1.gcp.snowflakecomputing.com:443
+2022-04-06 19:26:14,530 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:464  - cache directory: C:\Users\tanis\AppData\Local\Snowflake\Caches
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ssl_wrap_socket DEBUG ssl_wrap_socket:86   - OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:506  - ocsp_response_cache_uri: file://C:/Users/tanis/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:507  - OCSP_VALIDATION_CACHE size: 0
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:290  - OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:325  - OCSP dynamic cache server RETRY URL: None
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-05-12 02:43:45+00:00
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-05-12 02:47:38+00:00
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2022-04-06 19:26:14,561 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2022-04-06 19:26:14,577 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-04-15 00:00:00+00:00
+2022-04-06 19:26:14,593 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:26:14,593 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,593 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,593 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,598 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 20:00:20+00:00
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:236  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2023-01-25 19:35:21+00:00
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:545  - Read OCSP response cache file: C:/Users/tanis/AppData/Local/Snowflake/Caches/ocsp_response_cache.json, count=166
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1063 - validating certificate: no19103.us-central1.gcp.snowflakecomputing.com
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:434  - # of certificates: 3
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:440  - subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.us-central1.gcp.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:440  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')])
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:440  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('organizational_unit_name', 'www.digicert.com'), ('common_name', 'DigiCert Global Root CA')])
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:682  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.us-central1.gcp.snowflakecomputing.com')])
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:682  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2022-04-06 19:26:14,609 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:682  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'California'), ('locality_name', 'San Mateo'), ('organization_name', 'Snowflake Inc.'), ('common_name', '*.us-central1.gcp.snowflakecomputing.com')])
+2022-04-06 19:26:14,624 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1237 - using OCSP response cache
+2022-04-06 19:26:14,624 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:329  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2022-04-06 19:26:14,624 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:336  - Verifying the OCSP response is signed by the issuer.
+2022-04-06 19:26:14,624 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:682  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'DigiCert Inc'), ('common_name', 'DigiCert TLS RSA SHA256 2020 CA1')])
+2022-04-06 19:26:14,640 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1237 - using OCSP response cache
+2022-04-06 19:26:14,640 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:329  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2022-04-06 19:26:14,640 (17980/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:336  - Verifying the OCSP response is signed by the issuer.
+2022-04-06 19:26:14,640 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:604  - writing OCSP response cache file to C:/Users/tanis/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+2022-04-06 19:26:14,640 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1715 - encoding OCSP response cache to JSON
+2022-04-06 19:26:14,656 (17980/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1115 - ok
+2022-04-06 19:26:14,782 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /session/v1/login-request?request_id=a12832b2-b10f-48ad-9308-d1448bee596b&request_guid=8eae9336-fdf6-4fa6-9838-19d7d38962c9 HTTP/1.1" 200 None
+2022-04-06 19:26:14,797 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:14,799 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:14,799 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:14,799 (17980/MainThread) snowflake.connector.auth DEBUG           auth:370  - completed authentication
+2022-04-06 19:26:14,799 (17980/MainThread) snowflake.connector.auth DEBUG           auth:414  - token = ******
+2022-04-06 19:26:14,799 (17980/MainThread) snowflake.connector.auth DEBUG           auth:418  - master_token = ******
+2022-04-06 19:26:14,799 (17980/MainThread) snowflake.connector.auth DEBUG           auth:422  - id_token = NULL
+2022-04-06 19:26:14,799 (17980/MainThread) snowflake.connector.auth DEBUG           auth:426  - mfa_token = NULL
+2022-04-06 19:26:14,799 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:298  - adding connection: 0
+2022-04-06 19:26:14,805 (17980/MainThread) __main__ DEBUG      eventloop:666  - Read from a file
+2022-04-06 19:26:14,805 (17980/MainThread) __main__ DEBUG      eventloop:669  - Files are added to list ('raw_schema/load_raw_data.sql',)
+2022-04-06 19:26:14,807 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: USE DATABASE goingDataWay_sales;
+2022-04-06 19:26:14,808 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: USE DATABASE goingDataWay_sales;
+2022-04-06 19:26:14,808 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - set()
+2022-04-06 19:26:14,809 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:14,809 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:14,810 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:14,810 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: USE DATABASE goingDataWay_sales;
+2022-04-06 19:26:14,811 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:14,811 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:14,811 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:14,812 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [USE DATABASE goingDataWay_sales;] with input=[None], processed=[{}]
+2022-04-06 19:26:14,812 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [USE DATABASE goingDataWay_sales;]
+2022-04-06 19:26:14,812 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:14,812 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 1
+2022-04-06 19:26:14,812 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: d6936ade-d2c7-493c-9b06-62beff85e361
+2022-04-06 19:26:14,812 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [USE DATABASE goingDataWay_sales;]
+2022-04-06 19:26:14,813 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:14,813 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:14,813 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[USE DATABASE goingDataWay_sales;], sequence_id=[1], is_file_transfer=[False]
+2022-04-06 19:26:14,814 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:14,814 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:14,814 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: f8dbfcac-a14c-4297-8448-ef7b0b210ab8
+2022-04-06 19:26:14,814 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:14,925 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=d6936ade-d2c7-493c-9b06-62beff85e361&request_guid=f8dbfcac-a14c-4297-8448-ef7b0b210ab8 HTTP/1.1" 200 None
+2022-04-06 19:26:14,925 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:14,925 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:14,925 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:14,925 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-8026-0000-d14d0001a00a
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-8026-0000-d14d0001a00a
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:14,941 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:26:14,941 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Statement executed successfully.']]"
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [32]
+2022-04-06 19:26:14,941 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                          '], minwidths: [32]
+2022-04-06 19:26:14,945 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.13860154151916504
+2022-04-06 19:26:14,946 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: USE SCHEMA raw;
+2022-04-06 19:26:14,947 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: USE SCHEMA raw;
+2022-04-06 19:26:14,947 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:14,947 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:14,947 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:14,948 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:14,948 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: USE SCHEMA raw;
+2022-04-06 19:26:14,948 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:14,948 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:14,948 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:14,948 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [USE SCHEMA raw;] with input=[None], processed=[{}]
+2022-04-06 19:26:14,949 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [USE SCHEMA raw;]
+2022-04-06 19:26:14,949 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:14,949 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 2
+2022-04-06 19:26:14,949 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 76b3b629-2a9b-4473-aed1-545b84cb07f9
+2022-04-06 19:26:14,949 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [USE SCHEMA raw;]
+2022-04-06 19:26:14,949 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:14,949 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:14,950 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[USE SCHEMA raw;], sequence_id=[2], is_file_transfer=[False]
+2022-04-06 19:26:14,950 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:14,950 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:14,950 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 8433131a-7f44-434c-b2c1-41c50bb6f718
+2022-04-06 19:26:14,950 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=76b3b629-2a9b-4473-aed1-545b84cb07f9&request_guid=8433131a-7f44-434c-b2c1-41c50bb6f718 HTTP/1.1" 200 None
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-8024-0000-d14d0001900a
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-8024-0000-d14d0001900a
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:15,063 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:15,079 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:15,079 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:15,079 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:15,079 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:15,079 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:26:15,079 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Statement executed successfully.']]"
+2022-04-06 19:26:15,079 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [32]
+2022-04-06 19:26:15,079 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                          '], minwidths: [32]
+2022-04-06 19:26:15,094 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.14798259735107422
+2022-04-06 19:26:15,097 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace file format sales_csv_format
+    type = 'CSV'
+    field_delimiter = '|'
+    skip_header = 1;
+2022-04-06 19:26:15,097 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace file format sales_csv_format
+    type = 'CSV'
+    field_delimiter = '|'
+    skip_header = 1;
+2022-04-06 19:26:15,097 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:15,098 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:15,098 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:15,098 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:15,098 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace file format sales_csv_format
+    type = 'CSV'
+    field_delimiter = '|'
+    skip_header = 1;
+2022-04-06 19:26:15,099 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:15,099 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:15,099 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:15,099 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace file format sales_csv_format type = 'CSV' field_delimiter = '|...] with input=[None], processed=[{}]
+2022-04-06 19:26:15,099 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace file format sales_csv_format type = 'CSV' field_delimiter = '|...]
+2022-04-06 19:26:15,099 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:15,100 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 3
+2022-04-06 19:26:15,100 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 833da074-1b27-461b-8f63-8c2956f835b5
+2022-04-06 19:26:15,100 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace file format sales_csv_format type = 'CSV' field_delimiter = '|...]
+2022-04-06 19:26:15,100 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:15,100 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:15,100 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace file format sales_csv_format type = 'CSV' field_delimiter = '|...], sequence_id=[3], is_file_transfer=[False]
+2022-04-06 19:26:15,101 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:15,101 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:15,101 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: d35ab334-54a6-4a92-847c-c84973f3bc77
+2022-04-06 19:26:15,101 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=833da074-1b27-461b-8f63-8c2956f835b5&request_guid=d35ab334-54a6-4a92-847c-c84973f3bc77 HTTP/1.1" 200 None
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-801c-0000-d14d0001500a
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-801c-0000-d14d0001500a
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:15,252 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:26:15,252 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['File format SALES_CSV_FORMAT successfully created.']]"
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [50]
+2022-04-06 19:26:15,252 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                                            '], minwidths: [50]
+2022-04-06 19:26:15,261 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.16433000564575195
+2022-04-06 19:26:15,262 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace stage sales_stage
+    url = 's3://seng5709/'
+    file_format = sales_csv_format;
+2022-04-06 19:26:15,263 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace stage sales_stage
+    url = 's3://seng5709/'
+    file_format = sales_csv_format;
+2022-04-06 19:26:15,263 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:15,263 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:15,263 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:15,264 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:15,264 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace stage sales_stage
+    url = 's3://seng5709/'
+    file_format = sales_csv_format;
+2022-04-06 19:26:15,264 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:15,264 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:15,264 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:15,264 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace stage sales_stage url = 's3://seng5709/' file_format = sales_c...] with input=[None], processed=[{}]
+2022-04-06 19:26:15,265 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace stage sales_stage url = 's3://seng5709/' file_format = sales_c...]
+2022-04-06 19:26:15,265 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:15,265 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 4
+2022-04-06 19:26:15,265 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 8ecde470-2668-4a42-8771-b45c3e23ed15
+2022-04-06 19:26:15,265 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace stage sales_stage url = 's3://seng5709/' file_format = sales_c...]
+2022-04-06 19:26:15,265 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:15,266 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:15,266 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace stage sales_stage url = 's3://seng5709/' file_format = sales_c...], sequence_id=[4], is_file_transfer=[False]
+2022-04-06 19:26:15,266 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:15,266 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:15,266 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 36159165-278d-470e-adfa-b0117748c7e9
+2022-04-06 19:26:15,267 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:15,867 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=8ecde470-2668-4a42-8771-b45c3e23ed15&request_guid=36159165-278d-470e-adfa-b0117748c7e9 HTTP/1.1" 200 None
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-801e-0000-d14d0001b006
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-801e-0000-d14d0001b006
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:15,882 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:26:15,882 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Stage area SALES_STAGE successfully created.']]"
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [44]
+2022-04-06 19:26:15,882 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                                      '], minwidths: [44]
+2022-04-06 19:26:15,889 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.6278548240661621
+2022-04-06 19:26:15,890 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: list @sales_stage;
+2022-04-06 19:26:15,891 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: list @sales_stage;
+2022-04-06 19:26:15,891 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:15,892 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:15,892 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:15,893 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:15,893 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: list @sales_stage;
+2022-04-06 19:26:15,893 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:15,893 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:15,893 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:15,893 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [list @sales_stage;] with input=[None], processed=[{}]
+2022-04-06 19:26:15,893 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [list @sales_stage;]
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 5
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 57c1a70f-c480-4d4e-9c6d-4ca38758721f
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [list @sales_stage;]
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[list @sales_stage;], sequence_id=[5], is_file_transfer=[False]
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 497de96b-ce43-45db-85e1-8eff611500da
+2022-04-06 19:26:15,894 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=57c1a70f-c480-4d4e-9c6d-4ca38758721f&request_guid=497de96b-ce43-45db-85e1-8eff611500da HTTP/1.1" 200 None
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-8029-0000-d14d0001c006
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-8029-0000-d14d0001c006
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 6
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:16,775 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('name', 2), ('size', 0), ('md5', 2), ('last_modified', 2)]
+2022-04-06 19:26:16,775 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['s3://seng5709/cars/cars.csv', '3289', '6644210c8e77efe061bab51c0ca7790c', 'Fri, 25 Feb 2022 22:31:05 GMT'], ['s3://seng5709/customers/Customers2.csv', '425663', '702f9c55e4215eff5ff0acfd4418f027', 'Sun, 26 Dec 2021 23:38:01 GMT'], ['s3://seng5709/em..."
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [38, 9, 35, 29]
+2022-04-06 19:26:16,775 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['name                                  ', '     size', 'md5                                ', 'last_modified                '], minwidths: [38, 9, 35, 29]
+2022-04-06 19:26:16,787 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.8964338302612305
+2022-04-06 19:26:16,789 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: copy into customers
+    from @sales_stage/customers/
+    pattern='.*Customers.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:16,789 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: copy into customers
+    from @sales_stage/customers/
+    pattern='.*Customers.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:16,789 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:16,790 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:16,790 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:16,790 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:16,790 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: copy into customers
+    from @sales_stage/customers/
+    pattern='.*Customers.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:16,791 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:16,791 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:16,791 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:16,792 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [copy into customers from @sales_stage/customers/ pattern='.*Customers.*.csv' on_...] with input=[None], processed=[{}]
+2022-04-06 19:26:16,792 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [copy into customers from @sales_stage/customers/ pattern='.*Customers.*.csv' on_...]
+2022-04-06 19:26:16,792 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:16,792 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 6
+2022-04-06 19:26:16,793 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 3231c0c1-1cbf-4d8a-b1ed-ec7074a8b00a
+2022-04-06 19:26:16,793 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [copy into customers from @sales_stage/customers/ pattern='.*Customers.*.csv' on_...]
+2022-04-06 19:26:16,793 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:16,793 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:16,793 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[copy into customers from @sales_stage/customers/ pattern='.*Customers.*.csv' on_...], sequence_id=[6], is_file_transfer=[False]
+2022-04-06 19:26:16,794 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:16,794 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:16,794 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 22a60ef7-8c00-4973-818c-709ad91d0c90
+2022-04-06 19:26:16,794 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=3231c0c1-1cbf-4d8a-b1ed-ec7074a8b00a&request_guid=22a60ef7-8c00-4973-818c-709ad91d0c90 HTTP/1.1" 200 None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-8024-0000-d14d0001900e
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-8024-0000-d14d0001900e
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:19,989 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('file', 2), ('status', 2), ('rows_parsed', 0), ('rows_loaded', 0), ('error_limit', 0), ('errors_seen', 0), ('first_error', 2), ('first_error_line', 0), ('first_error_character', 0), ('first_error_column_name', 2)]
+2022-04-06 19:26:19,989 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['s3://seng5709/customers/Customers2.csv', 'LOADED', '19760', '19760', '1', '0', None, None, None, None]]"
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [38, 6, 11, 11, 11, 11, 11, 16, 21, 23]
+2022-04-06 19:26:19,989 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['file                                  ', 'status', 'rows_parsed', 'rows_loaded', 'error_limit', 'errors_seen', 'first_error', 'first_error_line', 'first_error_character', 'first_error_column_name'], minwidths: [38, 6, 11, 11, 11, 11, 11, 16, 21, 23]
+2022-04-06 19:26:20,012 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 3.2237167358398438
+2022-04-06 19:26:20,013 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: copy into products
+    from @sales_stage/products/
+    pattern='.*Products.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:20,013 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: copy into products
+    from @sales_stage/products/
+    pattern='.*Products.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:20,013 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:20,013 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:20,014 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:20,014 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:20,014 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: copy into products
+    from @sales_stage/products/
+    pattern='.*Products.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:20,014 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:20,014 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:20,015 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:20,015 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [copy into products from @sales_stage/products/ pattern='.*Products.*.csv' on_err...] with input=[None], processed=[{}]
+2022-04-06 19:26:20,015 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [copy into products from @sales_stage/products/ pattern='.*Products.*.csv' on_err...]
+2022-04-06 19:26:20,015 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:20,016 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 7
+2022-04-06 19:26:20,016 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 2e84ff7b-eaf2-40b1-9767-0de93be5d1ad
+2022-04-06 19:26:20,016 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [copy into products from @sales_stage/products/ pattern='.*Products.*.csv' on_err...]
+2022-04-06 19:26:20,017 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:20,017 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:20,017 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[copy into products from @sales_stage/products/ pattern='.*Products.*.csv' on_err...], sequence_id=[7], is_file_transfer=[False]
+2022-04-06 19:26:20,017 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:20,017 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:20,018 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 18201d3f-79e1-40a5-bb4d-1397d588279c
+2022-04-06 19:26:20,018 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=2e84ff7b-eaf2-40b1-9767-0de93be5d1ad&request_guid=18201d3f-79e1-40a5-bb4d-1397d588279c HTTP/1.1" 200 None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-801d-0000-d14d0001d006
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-801d-0000-d14d0001d006
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:22,499 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('file', 2), ('status', 2), ('rows_parsed', 0), ('rows_loaded', 0), ('error_limit', 0), ('errors_seen', 0), ('first_error', 2), ('first_error_line', 0), ('first_error_character', 0), ('first_error_column_name', 2)]
+2022-04-06 19:26:22,499 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['s3://seng5709/products/Products.csv', 'LOADED', '504', '504', '1', '0', None, None, None, None]]"
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [35, 6, 11, 11, 11, 11, 11, 16, 21, 23]
+2022-04-06 19:26:22,499 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['file                               ', 'status', 'rows_parsed', 'rows_loaded', 'error_limit', 'errors_seen', 'first_error', 'first_error_line', 'first_error_character', 'first_error_column_name'], minwidths: [35, 6, 11, 11, 11, 11, 11, 16, 21, 23]
+2022-04-06 19:26:22,512 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 2.498990535736084
+2022-04-06 19:26:22,512 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: copy into sales
+    from @sales_stage/sales/
+    pattern='.*Sales.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:22,512 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: copy into sales
+    from @sales_stage/sales/
+    pattern='.*Sales.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: copy into sales
+    from @sales_stage/sales/
+    pattern='.*Sales.*.csv'
+    on_error = 'skip_file';
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [copy into sales from @sales_stage/sales/ pattern='.*Sales.*.csv' on_error = 'ski...] with input=[None], processed=[{}]
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [copy into sales from @sales_stage/sales/ pattern='.*Sales.*.csv' on_error = 'ski...]
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 8
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 5ed3839c-0174-4c1e-942d-c3f598187182
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [copy into sales from @sales_stage/sales/ pattern='.*Sales.*.csv' on_error = 'ski...]
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[copy into sales from @sales_stage/sales/ pattern='.*Sales.*.csv' on_error = 'ski...], sequence_id=[8], is_file_transfer=[False]
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: d1c16b2d-123f-4fbe-82d2-c3b078782256
+2022-04-06 19:26:22,513 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=5ed3839c-0174-4c1e-942d-c3f598187182&request_guid=d1c16b2d-123f-4fbe-82d2-c3b078782256 HTTP/1.1" 200 None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-8026-0000-d14d0001a00e
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-8026-0000-d14d0001a00e
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:39,972 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('file', 2), ('status', 2), ('rows_parsed', 0), ('rows_loaded', 0), ('error_limit', 0), ('errors_seen', 0), ('first_error', 2), ('first_error_line', 0), ('first_error_character', 0), ('first_error_column_name', 2)]
+2022-04-06 19:26:39,972 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['s3://seng5709/sales/Sales2.csv', 'LOADED', '6715221', '6715221', '1', '0', None, None, None, None]]"
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [30, 6, 11, 11, 11, 11, 11, 16, 21, 23]
+2022-04-06 19:26:39,972 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['file                          ', 'status', 'rows_parsed', 'rows_loaded', 'error_limit', 'errors_seen', 'first_error', 'first_error_line', 'first_error_character', 'first_error_column_name'], minwidths: [30, 6, 11, 11, 11, 11, 11, 16, 21, 23]
+2022-04-06 19:26:39,986 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 17.473517656326294
+2022-04-06 19:26:39,987 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace file format employee_csv_format
+    type = 'CSV'
+    field_delimiter = ','
+    skip_header = 1;
+2022-04-06 19:26:39,987 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace file format employee_csv_format
+    type = 'CSV'
+    field_delimiter = ','
+    skip_header = 1;
+2022-04-06 19:26:39,988 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:39,988 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:39,988 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace file format employee_csv_format
+    type = 'CSV'
+    field_delimiter = ','
+    skip_header = 1;
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace file format employee_csv_format type = 'CSV' field_delimiter =...] with input=[None], processed=[{}]
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace file format employee_csv_format type = 'CSV' field_delimiter =...]
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 9
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: 31c03453-6592-4938-aebf-5ec042cd9bc8
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace file format employee_csv_format type = 'CSV' field_delimiter =...]
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace file format employee_csv_format type = 'CSV' field_delimiter =...], sequence_id=[9], is_file_transfer=[False]
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 8b027bcb-96f6-4652-88be-4c8722b81d55
+2022-04-06 19:26:39,989 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=31c03453-6592-4938-aebf-5ec042cd9bc8&request_guid=8b027bcb-96f6-4652-88be-4c8722b81d55 HTTP/1.1" 200 None
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-8026-0000-d14d0001a012
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-8026-0000-d14d0001a012
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:40,101 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:26:40,101 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['File format EMPLOYEE_CSV_FORMAT successfully created.']]"
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [53]
+2022-04-06 19:26:40,101 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                                               '], minwidths: [53]
+2022-04-06 19:26:40,111 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.12453746795654297
+2022-04-06 19:26:40,112 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: create or replace stage employees_stage
+    url = 's3://seng5709/'
+    file_format = employee_csv_format;
+2022-04-06 19:26:40,113 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: create or replace stage employees_stage
+    url = 's3://seng5709/'
+    file_format = employee_csv_format;
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: create or replace stage employees_stage
+    url = 's3://seng5709/'
+    file_format = employee_csv_format;
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [create or replace stage employees_stage url = 's3://seng5709/' file_format = emp...] with input=[None], processed=[{}]
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [create or replace stage employees_stage url = 's3://seng5709/' file_format = emp...]
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 10
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: f38fd30d-deef-4f67-801a-5efa39a44334
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [create or replace stage employees_stage url = 's3://seng5709/' file_format = emp...]
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[create or replace stage employees_stage url = 's3://seng5709/' file_format = emp...], sequence_id=[10], is_file_transfer=[False]
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 3c0195a3-38bb-40ea-9678-d16e09e674be
+2022-04-06 19:26:40,114 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:40,746 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=f38fd30d-deef-4f67-801a-5efa39a44334&request_guid=3c0195a3-38bb-40ea-9678-d16e09e674be HTTP/1.1" 200 None
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-8021-0000-d14d0001e006
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-8021-0000-d14d0001e006
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:40,761 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('status', 2)]
+2022-04-06 19:26:40,761 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['Stage area EMPLOYEES_STAGE successfully created.']]"
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [48]
+2022-04-06 19:26:40,761 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['status                                          '], minwidths: [48]
+2022-04-06 19:26:40,771 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 0.6584997177124023
+2022-04-06 19:26:40,772 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:389  - sql: copy into employees
+    from @employees_stage/employees/
+    pattern='.*Employees.*.csv'
+    on_error = 'continue';
+2022-04-06 19:26:40,772 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:390  - secret_free_sql: copy into employees
+    from @employees_stage/employees/
+    pattern='.*Employees.*.csv'
+    on_error = 'continue';
+2022-04-06 19:26:40,772 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:398  - {('__rowcount', '...'), ('__sfqid', '...')}
+2022-04-06 19:26:40,772 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:40,772 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:40,772 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:540  - Regular sql statement. sql: copy into employees
+    from @employees_stage/employees/
+    pattern='.*Employees.*.csv'
+    on_error = 'continue';
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.connection DEBUG     connection:576  - cursor
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:547  - exit_on_error: False, progress_bar: True
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:616  - executing SQL/command
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:650  - binding: [copy into employees from @employees_stage/employees/ pattern='.*Employees.*.csv'...] with input=[None], processed=[{}]
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.cursor INFO         cursor:696  - query: [copy into employees from @employees_stage/employees/ pattern='.*Employees.*.csv'...]
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:426  - Cannot use arrow result format, fallback to json format
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.connection DEBUG     connection:1250 - sequence counter: 11
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:445  - Request id: c4b7260f-8689-4ddb-8594-395e1b5b7d25
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:448  - running query [copy into employees from @employees_stage/employees/ pattern='.*Employees.*.csv'...]
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:457  - is_file_transfer: True
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.connection DEBUG     connection:923  - _cmd_query
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.connection DEBUG     connection:950  - sql=[copy into employees from @employees_stage/employees/ pattern='.*Employees.*.csv'...], sequence_id=[11], is_file_transfer=[False]
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: None, retry cnt: 1
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: a860a76a-f645-4496-9777-37c809dfcb40
+2022-04-06 19:26:40,773 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:43,100 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=c4b7260f-8689-4ddb-8594-395e1b5b7d25&request_guid=a860a76a-f645-4496-9777-37c809dfcb40 HTTP/1.1" 200 None
+2022-04-06 19:26:43,101 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:43,101 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:43,102 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:43,102 (17980/MainThread) snowflake.connector.network DEBUG        network:735  - Query id: 01a36e8e-0000-801c-0000-d14d0001500e
+2022-04-06 19:26:43,102 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:718  - sfqid: 01a36e8e-0000-801c-0000-d14d0001500e
+2022-04-06 19:26:43,102 (17980/MainThread) snowflake.connector.cursor INFO         cursor:720  - query execution done
+2022-04-06 19:26:43,102 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:722  - SUCCESS
+2022-04-06 19:26:43,102 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:725  - PUT OR GET: False
+2022-04-06 19:26:43,102 (17980/MainThread) snowflake.connector.cursor DEBUG         cursor:820  - Query result format: json
+2022-04-06 19:26:43,103 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:43,103 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:43,103 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:43,103 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:43,103 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:43,103 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:43,103 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:43,104 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:43,104 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: FIXED, Format: None
+2022-04-06 19:26:43,104 (17980/MainThread) snowflake.connector.converter_snowsql DEBUG converter_snowsql:88   - Type: TEXT, Format: None
+2022-04-06 19:26:43,104 (17980/MainThread) snowflake.connector.result_batch DEBUG   result_batch:442  - parsing for result batch id: 1
+2022-04-06 19:26:43,104 (17980/MainThread) snowflake.connector.result_set DEBUG     result_set:72   - beginning to schedule result batch downloads
+2022-04-06 19:26:43,104 (17980/MainThread) __main__ DEBUG      eventloop:723  - headers: [('file', 2), ('status', 2), ('rows_parsed', 0), ('rows_loaded', 0), ('error_limit', 0), ('errors_seen', 0), ('first_error', 2), ('first_error_line', 0), ('first_error_character', 0), ('first_error_column_name', 2)]
+2022-04-06 19:26:43,105 (17980/MainThread) __main__ DEBUG      eventloop:729  - rows: "[['s3://seng5709/employees/Employees2.csv', 'LOADED', '23', '23', '23', '0', None, None, None, None]]"
+2022-04-06 19:26:43,105 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:642  - minwidths: [38, 6, 11, 11, 11, 11, 11, 16, 21, 23]
+2022-04-06 19:26:43,105 (17980/MainThread) snowflake.cli.tabulate DEBUG       tabulate:651  - headers: ['file                                  ', 'status', 'rows_parsed', 'rows_loaded', 'error_limit', 'errors_seen', 'first_error', 'first_error_line', 'first_error_character', 'first_error_column_name'], minwidths: [38, 6, 11, 11, 11, 11, 11, 16, 21, 23]
+2022-04-06 19:26:43,113 (17980/MainThread) __main__ DEBUG      eventloop:822  - Command Time: 2.3417699337005615
+2022-04-06 19:26:43,114 (17980/MainThread) __main__ DEBUG      eventloop:794  - end of SQL: copy into employees
+    from @employees_stage/employees/
+    pattern='.*Employees.*.csv'
+    on_error = 'continue';
+2022-04-06 19:26:43,114 (17980/MainThread) __main__ DEBUG      eventloop:581  - closing sessions
+2022-04-06 19:26:43,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:349  - closing connections
+2022-04-06 19:26:43,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:316  - joining async exec
+2022-04-06 19:26:43,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:324  - waiting for async exec to finish...
+2022-04-06 19:26:43,114 (17980/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:341  - all async queries finished.
+2022-04-06 19:26:43,115 (17980/MainThread) snowflake.connector.connection INFO     connection:509  - closed
+2022-04-06 19:26:43,115 (17980/MainThread) snowflake.connector.telemetry DEBUG      telemetry:143  - Closing telemetry client.
+2022-04-06 19:26:43,116 (17980/MainThread) snowflake.connector.telemetry DEBUG      telemetry:112  - Sending 1 logs to telemetry. Data is {'logs': [{'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-8026-0000-d14d0001a00a', 'value': -512}, 'timestamp': '1649273174941'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-8026-0000-d14d0001a00a', 'value': 0}, 'timestamp': '1649273174941'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-8024-0000-d14d0001900a', 'value': -518}, 'timestamp': '1649273175063'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-8024-0000-d14d0001900a', 'value': 16}, 'timestamp': '1649273175079'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-801c-0000-d14d0001500a', 'value': -514}, 'timestamp': '1649273175252'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-801c-0000-d14d0001500a', 'value': 0}, 'timestamp': '1649273175252'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-801e-0000-d14d0001b006', 'value': -511}, 'timestamp': '1649273175882'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-801e-0000-d14d0001b006', 'value': 0}, 'timestamp': '1649273175882'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-8029-0000-d14d0001c006', 'value': -516}, 'timestamp': '1649273176775'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-8029-0000-d14d0001c006', 'value': 0}, 'timestamp': '1649273176775'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-8024-0000-d14d0001900e', 'value': -519}, 'timestamp': '1649273179989'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-8024-0000-d14d0001900e', 'value': 0}, 'timestamp': '1649273179989'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-801d-0000-d14d0001d006', 'value': -512}, 'timestamp': '1649273182499'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-801d-0000-d14d0001d006', 'value': 0}, 'timestamp': '1649273182499'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-8026-0000-d14d0001a00e', 'value': -514}, 'timestamp': '1649273199972'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-8026-0000-d14d0001a00e', 'value': 0}, 'timestamp': '1649273199972'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-8026-0000-d14d0001a012', 'value': -518}, 'timestamp': '1649273200101'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-8026-0000-d14d0001a012', 'value': 0}, 'timestamp': '1649273200101'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-8021-0000-d14d0001e006', 'value': -512}, 'timestamp': '1649273200761'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-8021-0000-d14d0001e006', 'value': 0}, 'timestamp': '1649273200761'}, {'message': {'type': 'client_time_consume_first_result', 'query_id': '01a36e8e-0000-801c-0000-d14d0001500e', 'value': -512}, 'timestamp': '1649273203102'}, {'message': {'type': 'client_time_consume_last_result', 'query_id': '01a36e8e-0000-801c-0000-d14d0001500e', 'value': 2}, 'timestamp': '1649273203104'}]}.
+2022-04-06 19:26:43,118 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:43,118 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: 5, retry cnt: 1
+2022-04-06 19:26:43,118 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: 163300ad-ff6f-4608-b2cc-02ec8d11c8cf
+2022-04-06 19:26:43,118 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:43,230 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /telemetry/send?request_guid=163300ad-ff6f-4608-b2cc-02ec8d11c8cf HTTP/1.1" 200 86
+2022-04-06 19:26:43,233 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:43,234 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:43,235 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:43,235 (17980/MainThread) snowflake.connector.telemetry DEBUG      telemetry:133  - Successfully uploading metrics to telemetry.
+2022-04-06 19:26:43,236 (17980/MainThread) snowflake.connector.connection INFO     connection:512  - No async queries seem to be running, deleting session
+2022-04-06 19:26:43,237 (17980/MainThread) snowflake.connector.network DEBUG        network:1117 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 1/1 active sessions
+2022-04-06 19:26:43,238 (17980/MainThread) snowflake.connector.network DEBUG        network:826  - remaining request timeout: 5, retry cnt: 1
+2022-04-06 19:26:43,238 (17980/MainThread) snowflake.connector.network DEBUG        network:804  - Request guid: bff9706f-24b1-407e-a02e-b0715979da42
+2022-04-06 19:26:43,238 (17980/MainThread) snowflake.connector.network DEBUG        network:973  - socket timeout: 60
+2022-04-06 19:26:43,491 (17980/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:461  - https://no19103.us-central1.gcp.snowflakecomputing.com:443 "POST /session?delete=true&request_guid=bff9706f-24b1-407e-a02e-b0715979da42 HTTP/1.1" 200 76
+2022-04-06 19:26:43,491 (17980/MainThread) snowflake.connector.network DEBUG        network:1002 - SUCCESS
+2022-04-06 19:26:43,491 (17980/MainThread) snowflake.connector.network DEBUG        network:1123 - Session status for SessionPool 'no19103.us-central1.gcp.snowflakecomputing.com', SessionPool 0/1 active sessions
+2022-04-06 19:26:43,491 (17980/MainThread) snowflake.connector.network DEBUG        network:713  - ret[code] = None, after post request
+2022-04-06 19:26:43,507 (17980/MainThread) snowflake.connector.connection DEBUG     connection:523  - Session is closed
