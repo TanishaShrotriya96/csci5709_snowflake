@@ -14,17 +14,17 @@ list @sales_stage;
 
 copy into customers
     from @sales_stage/customers/
-    pattern='.*Customers*.csv'
+    pattern='.*Customers.*.csv'
     on_error = 'skip_file';
 
 copy into products
     from @sales_stage/products/
-    pattern='.*Products*.csv'
+    pattern='.*Products.*.csv'
     on_error = 'skip_file';
 
 copy into sales
     from @sales_stage/sales/
-    pattern='.*Sales*.csv'
+    pattern='.*Sales.*.csv'
     on_error = 'skip_file';
 
 create or replace file format employee_csv_format
@@ -38,7 +38,7 @@ create or replace stage employees_stage
 
 copy into employees
     from @employees_stage/employees/
-    pattern='.*Employees*.csv'
+    pattern='.*Employees.*.csv'
     on_error = 'continue';
 
 update customers
